@@ -71,7 +71,6 @@ def main():
                 client.read_history(bot)
 
             utc_now = datetime.datetime.utcnow()
-            ist_now = utc_now + datetime.timedelta(minutes=30, hours=5)
 
             edit_text += f"<i>LAST UPDATE: {str(utc_now)} UTC</i>"
 
