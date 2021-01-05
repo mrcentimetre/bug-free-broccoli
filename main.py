@@ -34,7 +34,7 @@ BOTS = [
 ]
 UPDATE_CHANNEL = os.environ.get(
     "UPDATE_CHANNEL",
-    secrets.UDPATE_CHANNEL
+    secrets.UPDATE_CHANNEL
 )
 SATUS_MESSAGE_MESSAGE_ID = int(
     os.environ.get(
