@@ -3,10 +3,8 @@ import time
 import datetime
 import pyrogram
 
-try:
-    import secrets
-except:
-    import fake_secrets as secrets
+
+import fake_secrets as secrets
 
 SESSION_STRING = os.environ.get(
     "SESSION_STRING",
