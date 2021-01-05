@@ -62,7 +62,7 @@ def main():
                 if snt.message_id == msg.message_id:
                     edit_text += f"@{bot}: DOWN\n\n"
                     client.send_message(
-                        bot_owner,
+                        BOT_OWNER,
                         f"@{bot} is down!"
                     )
                 else:
@@ -76,8 +76,8 @@ def main():
             edit_text += f"<i>LAST UPDATE: {str(utc_now)} UTC</i>"
 
             client.edit_message_text(
-                update_channel,
-                status_message_id,
+                UPDATE_CHANNEL,
+                SATUS_MESSAGE_MESSAGE_ID,
                 edit_text
             )
             time.sleep(15 * 60)
