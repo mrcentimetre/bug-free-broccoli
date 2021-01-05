@@ -3,5 +3,5 @@ API_ID = 1234567
 API_HASH = "abcdefghijklmnop123456789"
 BOT_OWNER = "SonOfLars"
 BOTS = "GitHub_Bot GmailBot"
-UPDATE_CAHNNEL = "rfdihfds"
+UPDATE_CAHNNEL = "su_testbot"
 SATUS_MESSAGE_MESSAGE_ID = 1111111111111
