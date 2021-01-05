@@ -54,19 +54,19 @@ def main():
         while True:
             edit_text = "<b>Our Bots' Status (Updating Every 15 Minutes)</b>\n\n"
 
-            for bot in bots:
+            for bot in BOTS:
                 snt = client.send_message(bot, "/start")
                 time.sleep(5)
                 msg = client.get_history(bot, 1)[0]
 
                 if snt.message_id == msg.message_id:
-                    edit_text += f"@{bot}: 🔴 Down\n\n"
+                    edit_text += f"@{bot}: DOWN\n\n"
                     client.send_message(
                         bot_owner,
                         f"@{bot} is down!"
                     )
                 else:
-                    edit_text += f"@{bot}: 🟢 Running\n\n"
+                    edit_text += f"@{bot}: UP\n\n"
 
                 client.read_history(bot)
 
