@@ -69,10 +69,9 @@ def main():
                 client.read_history(bot)
 
             utc_now = datetime.datetime.utcnow()
-            ist_now = utc_now + datetime.timedelta(minutes=30, hours=5) + "(in sri lanka time)"
 
-            edit_text += f"__last checked on \n{str(utc_now)} UTC\n{ist_now} IST__"
-            
+            edit_text += f"<i>LAST UPDATE: {str(utc_now)} UTC</i>"
+
             client.edit_message_text(
                 UPDATE_CHANNEL,
                 SATUS_MESSAGE_MESSAGE_ID,
