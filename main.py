@@ -70,7 +70,7 @@ def main():
 
             utc_now = datetime.datetime.utcnow()
 
-            edit_text += f"<i>LAST UPDATE: {str(utc_now)} UTC</i>"
+            edit_text += f"<i>LAST UPDATE (in sri lanka time): {str(utc_now)} UTC</i>"
 
             client.edit_message_text(
                 UPDATE_CHANNEL,
