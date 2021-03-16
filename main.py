@@ -58,13 +58,13 @@ def main():
                 msg = client.get_history(bot, 1)[0]
 
                 if snt.message_id == msg.message_id:
-                    edit_text += f"@{bot}: ❌\n\n"
+                    edit_text += f"• @{bot}: ❌\n\n"
                     client.send_message(
                         BOT_OWNER,
                         f"@{bot} is down!"
                     )
                 else:
-                    edit_text += f"@{bot}: ✅\n\n"
+                    edit_text += f"• @{bot}: ✅\n\n"
 
                 client.read_history(bot)
 
